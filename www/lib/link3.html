@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>Vozes na Tech - Login</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <!-- CSS PERSONALIZADO PARA MENU-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/detalhes.css">
+
+    <!--Ícones Material Design-->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/remixicon/remixicon.css">
+</head>
+
+<body>
+
+    <!-- Inicializando a página "link3" -->
+    <div data-name="link3" class="page">
+
+        <!-- Nav topo -->
+        <div class="top-nav">
+            <h1 class="title-logo">Vozes na Tech</h1>
+            <a href="#">
+                <img src="logo1.jpg" class="logo" alt="Vozes na Tech">
+            </a>
+        </div>
+
+        <!-- Formulário de Login -->
+        <div class="container prod-detail">
+            <div class="prod-content">
+                <h2>LOGIN</h2>
+                <p>Faça seu login ou crie uma conta para navegar pela nossa plataforma</p>
+                
+                <form action="https://meir3manu.github.io/mvp/plataforma.html" method="GET">
+                    <label for="username">Usuário:</label>
+                    <input type="text" id="username" name="username" required><br><br>
+                    
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required><br><br>
+                    
+                    <button type="submit" class="btn-login">ENTRAR</button>
+                </form>
+
+                <!-- Botões para redirecionamento -->
+                <!-- Botão redirecionando para o cadastro -->
+                <button class="btn-cadastro" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfOqBjxTorLz0x0jtC_sUSk1C4HPLf9CweJFnRk7aJZMJQ3rA/viewform'">Primeiro cadastro</button>
+            </div>
+        </div>
+
+    </div> <!-- Fim da div.page -->
+
+    <!-- Inclusão das bibliotecas JS -->
+    <script src="lib/framework7-bundle.min.js"></script>
+    <script src="lib/jquery-3.7.0.min.js"></script>
+    <script src="js/routes.js"></script>
+    <script src="cordova.js"></script>
+</body>
+
+</html>

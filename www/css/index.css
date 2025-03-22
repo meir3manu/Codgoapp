@@ -1,0 +1,334 @@
+:root{
+    --branco: #ffff;
+    --gelo: #f1f1f1;
+    --roxo:#392361;
+    --preto:#2a2a2a;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    .bebas-neue-regular {
+        font-family: "Bebas Neue", serif;
+       
+      }
+      
+}
+
+.toolbar{
+    height: 80px;
+}
+
+.tab-link{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+.toolbar-inner{
+    background: var(--branco);
+    border-top:1px solid var(--gelo);
+}
+
+.toolbar-inner .link{    
+    flex:1;
+    height: 80px;  
+    line-height: 25px; 
+	font-weight:bold;   
+    color: var(--roxo); 
+}
+
+.toolbar-inner .link:not(.active){
+    color:var(--preto);
+	font-weight:normal;
+
+}
+
+.toolbar-inner > .link i{
+    font-size: 28px;
+}
+
+.top-nav{
+    width: 100%;
+    height: 60px;
+    background: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+
+.title-logo{
+    font-weight: 600;
+    margin-left: 5%;
+
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 30px; /* Adiciona espaço interno à esquerda */
+}
+
+
+form{
+    padding-top: 10px;
+    background: var(--branco);
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.iconebusca{
+    position: absolute;
+    top: 0px;
+    right: 5%;
+    font-size: 17px;
+    padding: 19px;
+
+}
+
+input[type="text"]{
+    width: 90%;
+    height: 45px;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px 20px;
+    background: var(--gelo);
+
+}
+
+::placeholder{
+    color: #b3afaf;
+}
+
+.page-content{
+    background: var(--branco);
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px;
+  }
+
+
+  .img-fluid{
+    max-width: 100%;
+  }
+
+  .block{
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+
+  .filter-btn {
+    width:1005; /* Ajusta o botão ao conteúdo */
+    height: 35px;
+    background: none;
+    border: 2px solid var(--preto); /* Corrigido para 2px */
+    border-radius: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.filter-btn.activer {
+    background: var(--roxo);
+    color: var(--branco);
+    border: none;
+
+}
+
+.row{
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.item{
+    color: var(--preto);
+}
+
+#produtos {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os itens no contêiner */
+    align-items: stretch; /* Faz os itens terem alturas iguais */
+    gap: 25px; /* Espaço uniforme entre os itens */
+}
+
+
+.item-card {
+    display: flex;
+    flex-direction: column;
+    width: 165px; /* Largura fixa */
+    height: auto;
+    margin-bottom: 2px; /* Espaçamento entre os itens */
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px; /* Mantém o tamanho fixo */
+    height: 180px;
+    border-radius: 10px;
+    background: var(--gelo);
+    overflow: hidden;
+}
+
+
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Mantém a proporção da imagem sem cortes */
+}
+
+.nome-rating {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.color-gray {
+    color: gray;
+}
+
+.mdi-star {
+    color: orange;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.price {
+    font-size: 20px;
+}
+
+/* Responsividade */
+@media (min-width: 600px) {
+    .item-card {
+        width: 30%; /* Três itens por linha em telas médias */
+    }
+}
+
+@media (min-width: 992px) {
+    .item-card {
+        width: 23%; /* Quatro itens por linha em telas maiores */
+    }
+}
+
+
+.options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.option {
+    background-color: #fff; /* Cor de fundo dos cards */
+    border-radius: 8px;
+    padding: 20px;
+    color: #000;
+    width: 250px; /* Tamanho ajustado dos cards */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.0s ease;
+}
+
+.option:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.option img {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+
+.option p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .option {
+        width: 70%; /* Ajusta o tamanho dos cards para telas menores */
+    }
+}
+
+
+
+
+
+.btn-cadastro {
+    background-color:var(--roxo); /* Cor roxa vibrante */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-cadastro:hover {
+    background-color: black;
+    transform: scale(1.05);
+}
+
+.btn-cadastro:active {
+    background-color: #370093;
+    transform: scale(0.98);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .btn-cadastro {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
