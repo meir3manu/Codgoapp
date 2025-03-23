@@ -124,7 +124,7 @@ var app = new Framework7({
     },
     {
       path: '/link3/',
-      url: 'lib/link3.html',
+      url: 'link3.html',
       animate: true,
       transition: 'f7-fade', // Adiciona o efeito de transição
       on: {
