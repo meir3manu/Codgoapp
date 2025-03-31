@@ -152,7 +152,7 @@ input[type="text"]{
     text-overflow: ellipsis;
 }
 
-.filter-btn.activer {
+.filter-btn.active {
     background: var(--roxo);
     color: var(--branco);
     border: none;
@@ -178,17 +178,23 @@ input[type="text"]{
     gap: 25px; /* Espaço uniforme entre os itens */
 }
 #eventos-container {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
+    padding: 15px;
+    justify-content: center;
 }
 
 .item-card {
-    display: none;
+    display: flex;
     flex-direction: column;
-    width: 165px; /* Largura fixa */
+    width: 150px;
     height: auto;
-    margin-bottom: 2px; /* Espaçamento entre os itens */
+    margin-bottom: 2px;
+    background: var(--branco);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 10px;
 }
 .item-card img {
     width: 100%;
