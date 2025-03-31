@@ -164,6 +164,7 @@ input[type="text"]{
     flex-direction: row;
 }
 
+
 .item{
     color: var(--preto);
 }
@@ -176,14 +177,27 @@ input[type="text"]{
     align-items: stretch; /* Faz os itens terem alturas iguais */
     gap: 25px; /* Espaço uniforme entre os itens */
 }
-
+#eventos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
 .item-card {
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 165px; /* Largura fixa */
     height: auto;
     margin-bottom: 2px; /* Espaçamento entre os itens */
+}
+.item-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.item-card p {
+    font-size: 14px;
+    text-align: center;
 }
 
 .img-container {
