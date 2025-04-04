@@ -7,7 +7,7 @@
 }
 
 .prod-detail {
-    background: var(--gelo);
+    background: var(--roxo);
     width: auto;
     height: auto; /* Ajusta conforme o conteúdo */
     min-height: 300px; /* Define um tamanho mínimo */
